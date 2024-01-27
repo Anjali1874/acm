@@ -1,32 +1,42 @@
-*{
-    margin :0;
-    padding:0;
-}
-.header{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color:  rgba(226, 228, 234, 0.7));
+  
+  }
+  
+  .header {
     min-height: 900px;
-    min-width: fit-content;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
-    background: linear-gradient(rgba(4,9,30,0.7),rgba(226, 228, 234, 0.7));
-   
-}
-nav{
+    background: linear-gradient(rgba(13, 13, 13, 0.7), rgba(226, 228, 234, 0.7));
+  }
+/*   
+  nav {
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
     text-align: center;
-}
-.navlinks{
-    flex : 1;
+  }
+  
+  .navlinks {
+    flex: 1;
     text-align: right;
-}
-.navlinks ul li{
+  }
+  
+  .navlinks ul li {
     text-decoration: none;
     display: inline-block;
     position: relative;
     padding: 8px 10px;
-}
-.navlinks ul li::after{
+  }
+  
+  .navlinks ul li::after {
     content: '';
     width: 0%;
     height: 5px;
@@ -34,13 +44,168 @@ nav{
     transition: 0.5s;
     display: block;
     margin: auto;
-}
-.navlinks ul li:hover::after{
+  }
+  
+  .navlinks ul li:hover::after {
     width: 100%;
-
-}
-.navlinks ul li a{
-    text-decoration:none ;
+  }
+  
+  .navlinks ul li a {
+    text-decoration: none;
+  }
+   */
+  .more {
+    text-decoration: none;
     color: white;
-    font-size: x-large;
+    display: inline-block;
+    border: 2px solid black;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 20px black;
+    background: linear-gradient(rgba(38, 104, 203, 0.7), rgba(226, 228, 234, 0.7));
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: 0px 500px;
+    background: linear-gradient(rgba(7, 27, 54, 0.7), rgba(87, 110, 182, 0.7));
+    animation: colorChange 2s infinite alternate;
+  }
+  
+  @keyframes colorChange {
+    100% {
+      color: white;
+    }
+  }
+  
+  .slider-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 70px;
+    height: 90px;
+  }
+  
+  .slider-wrapper {
+    display: flex;
+    animation: slideAnimation 30s linear infinite;
+  }
+  
+  .slider-item {
+    width: 100%;
+    flex-shrink: 0;
+  }
+  
+  @keyframes slideAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(-200%);
+    }
+    75% {
+      transform: translateX(-300%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .c-item {
+    height: 500px;
+    padding: 0 20px;
+  }
+  
+  .c-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
+
+.c-img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50px 70px;
+
+    margin: 0 auto; /* Center the image horizontally */
+    display: block;
+}
+  
+  h2 {
+    text-align: center;
+    color: rgb(8, 7, 7);
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 3rem;
+      margin: 0 10px;
+    }
+  
+    .navlinks {
+      text-align: center;
+    }
+  
+    .navlinks ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    .header {
+      min-height: auto;
+    }
+  
+    .slider-container {
+      max-width: 100%;
+    }
+  }
+/* Add this code to your existing CSS */
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(rgba(114, 130, 153, 0.7), rgba(87, 110, 182, 0.7));
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.image-container {
+    flex: 1;
+    max-width: 400px; /* Adjust the width as needed */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.text-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-container p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+}
+  
