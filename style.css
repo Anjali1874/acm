@@ -1,0 +1,46 @@
+*{
+    margin :0;
+    padding:0;
+}
+.header{
+    min-height: 900px;
+    min-width: fit-content;
+    background-size:cover;
+    background-position: center;
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(226, 228, 234, 0.7));
+   
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    text-align: center;
+}
+.navlinks{
+    flex : 1;
+    text-align: right;
+}
+.navlinks ul li{
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    padding: 8px 10px;
+}
+.navlinks ul li::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: rgb(87, 222, 222);
+    transition: 0.5s;
+    display: block;
+    margin: auto;
+}
+.navlinks ul li:hover::after{
+    width: 100%;
+
+}
+.navlinks ul li a{
+    text-decoration:none ;
+    color: white;
+    font-size: x-large;
+}
