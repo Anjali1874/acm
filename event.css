@@ -1,21 +1,38 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color:  rgba(226, 228, 234, 0.7));
-  
-  }
-  
-  .header {
-    min-height: 900px;
-    background-size: cover;
-    background-position: center;
-    background: linear-gradient(rgba(13, 13, 13, 0.7), rgba(226, 228, 234, 0.7));
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: black; /* Set the background color to black */
+}
+body {
+  background: linear-gradient(rgb(184, 184, 226),white);
+}
+.c-body{
+  background-color: aqua;
+}
+.header {
+  min-height: 900px;
+  background-size: cover;
+  background-position: center;
+  background: linear-gradient(rgba(13, 13, 13, 0.7), rgba(226, 228, 234, 0.7));
+}
+
+/* ... (other existing styles) */
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px auto;
+  padding: 20px;
+  background: linear-gradient(rgba(238, 239, 240, 0.7), rgba(87, 110, 182, 0.7));
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
 /*   
   nav {
     display: flex;
@@ -181,7 +198,7 @@
     align-items: center;
     margin: 20px auto;
     padding: 20px;
-    background: linear-gradient(rgba(114, 130, 153, 0.7), rgba(87, 110, 182, 0.7));
+    background: linear-gradient(rgba(90, 94, 100, 0.7), rgba(87, 110, 182, 0.7));
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }

@@ -1,0 +1,30 @@
+body {
+  background: linear-gradient(rgb(184, 184, 226),white);
+}
+
+.student-card {
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s, transform 0.3s;
+    max-width: 400px; 
+    margin: auto; 
+}
+
+.student-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.student-card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
