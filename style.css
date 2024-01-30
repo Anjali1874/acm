@@ -245,8 +245,19 @@
     top: -10px;
     bottom: -10px;
 }
+.event h1{
+    color: blue;
+}
+.xxl-title {
+    text-transform: capitalize;
+    font-size: 52px;
+    line-height: 72px;
+    margin-bottom: 30px;
+}
+
+
 .videos{
-    padding: 0px;
+    padding: 30px;
 }
 .videos .video-container h1{
     text-align: center;
@@ -256,7 +267,12 @@
 }
 .h1{
     color: blue;
+    padding: 10px;
 }
+.video{
+    padding: 30px;
+}
+
 .videos .video-container{
     padding: 30px;
    /* background-color: #757a7e;*/
@@ -265,37 +281,3 @@
 .container .main-txt h1{
     color: blue;
 }
-/* Footer start 
-#footer{
-    width: 100%;
-    margin-top: 150px;
-    text-align: center;
-    background: #4d4b4b;
-}
-#footer h1{
-    font-weight: 600;
-    padding-top: 30px;
-    text-shadow: 0px 0px 1px black;
-}
-#footer p{
-    color: white;
-    font-size: medium;
-}
-#footer h1 span{
-    color: #8fcfeb;
-}
-.social-links i{
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 20px;
-    background: black;
-    color: white;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    transition: 0.5s ease;
-    cursor: pointer;
-}
-.social-links i:hover{
-    background: #0091ff;
-}
-/* Footer End */
