@@ -31,7 +31,8 @@ h2,h4{
 
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-row-gap: 50px;
+    grid-gap: 100px;
+    grid-row-gap: 200px;
     
 
     padding: 100px;
@@ -62,20 +63,26 @@ img{
 }
 
 
-
 .img.active{
 
     transform: translateY(40%);
     transition: all 1s ease-out;
 }
 
+
+div div p:nth-child(3){
+
+    color: purple;
+    font-weight: bold;
+    font-size: medium;
+}
 @media (max-width:880px) {
 
     .mainboards,.managementteam,.sessionteam,.knowledgeteam,.technicalteam,.creativeteam,.publicityteam{
 
         display: flex;
         flex-direction: column;
-        gap: 80px;
+        gap: 200px;
         padding: 100px;
     }
     
